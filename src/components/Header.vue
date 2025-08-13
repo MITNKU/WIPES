@@ -38,26 +38,26 @@ const more_paper = {
     <el-affix :offset="0" :style="{width: '100%'}">
     
     <!-- 水平导航目录 -->
-    <el-menu 
+    <!-- <el-menu 
         default-active="1"
         class="el-menu-demo"
         mode="horizontal"
         :ellipsis="false"
-    >
+    > -->
         <!-- 个人主页 -->
-        <el-menu-item index="0" >
+        <!-- <el-menu-item index="0" >
             <el-icon :size="20"><HomeFilled /></el-icon>
             <a :href=home.link>{{ home.name }} </a>
-        </el-menu-item>
+        </el-menu-item> -->
         
         <!-- 项目主页 -->
-        <el-menu-item index="1">
+        <!-- <el-menu-item index="1">
             <el-icon :size="20"><SuccessFilled /></el-icon>
             <a :href=logo.link>{{ logo.name }} </a>
-        </el-menu-item>
+        </el-menu-item> -->
 
         <!-- 更多栏目 -->
-        <el-sub-menu index="2">
+        <!-- <el-sub-menu index="2">
             <template #title>More</template>
             <el-menu-item index="2-1">
                 <a :href=more_paper.ExtDM.link>{{ more_paper.ExtDM.name }}</a>
@@ -68,9 +68,9 @@ const more_paper = {
             <el-menu-item index="2-3">
                 <a :href=more_paper.ControlNet.link>{{ more_paper.ControlNet.name }}</a>
             </el-menu-item>
-        </el-sub-menu>
+        </el-sub-menu> -->
 
-    </el-menu>
+    <!-- </el-menu> -->
     </el-affix>
 </template>
 
@@ -126,4 +126,3 @@ a {
 
 </style>
 
-  

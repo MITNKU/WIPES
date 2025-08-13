@@ -13,7 +13,7 @@ const title = 'WIPES: Wavelet-based Visual Primitives'
 const title_color = '#000000'
 
 // 标题补充，没有则置为''即可
-const title_supp = '*'
+const title_supp = ''
 
 // 标题补充颜色
 const title_supp_color = '#42B883'
@@ -85,13 +85,13 @@ const addresses = [
 
 // 共一和通讯提示
 const con_and_corresponding_author = 
-  "† Equal contribution. * Corresponding author: caoxun@nju.edu.cn"
-
+  "†: Equal Contribution. *: Corresponding Author"
 // 最新消息
 const news = ""
 
 // 强调内容
 const emphases = [
+  "🎉 [ICCV 2025] Poster"
 ]
 
 // 提供引导资料链接
@@ -103,42 +103,14 @@ const buttons = [
   },
   {
     disabled: true,
-    name: "中译版",
-    component: Document,
-  },
-  {
-    disabled: false,
     name: "Code",
     link: "https://github.com/JunyaoHu/academic-project-page-template-vue",
     component: Files,
   },
   {
     disabled: false,
-    name: "Demo",
-    link: "https://junyaohu.github.io/academic-project-page-template-vue",
-    component: MagicStick,
-  },
-  {
-    disabled: true,
     name: "Poster",
     component: Picture,
-  },
-  {
-    disabled: true,
-    name: "Slide",
-    component: DataAnalysis,
-  },
-  {
-    disabled: false,
-    name: "Video (减论)",
-    link: "https://www.bilibili.com/video/BV15XkgYiE73/",
-    component: Film,
-  },
-  {
-    disabled: false,
-    name: "Video (Tutorial)",
-    link: "https://www.bilibili.com/video/BV1oUrfYzEqZ",
-    component: Film,
   },
 ]
 
@@ -148,11 +120,11 @@ const buttons = [
   <div>
 
     <!-- 最新消息提示 -->
-    <el-row justify="center">
+    <!-- <el-row justify="center">
       <el-col :span="24">
         <el-alert title="🔥 This template is still under development." type="success" />
       </el-col>
-    </el-row>
+    </el-row> -->
 
     <!-- 文章logo -->
     <el-row v-if="logo" justify="center">
