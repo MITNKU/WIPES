@@ -23,7 +23,7 @@ export default defineConfig({
       ],
     }),
   ],
-  base:'/',
+  base:'/WIPES',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
