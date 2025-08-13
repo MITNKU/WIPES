@@ -104,11 +104,11 @@ const buttons = [
   {
     disabled: true,
     name: "Code",
-    link: "https://github.com/JunyaoHu/academic-project-page-template-vue",
+    link: "",
     component: Files,
   },
   {
-    disabled: false,
+    disabled: true,
     name: "Poster",
     component: Picture,
   },
