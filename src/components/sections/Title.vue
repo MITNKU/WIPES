@@ -26,43 +26,43 @@ const authors = [
   {
     name: "Wenhao Zhang",
     icon: "",
-    homepage: "",
+    homepage: "https://github.com/MITNKU",
     address_flag: "1,†"
   },
   {
     name: "Hao Zhu",
     icon: "",
-    homepage: "",
+    homepage: "https://pakfa.github.io/zhuhao_photo.github.io/",
     address_flag: "1,†"
   },
   {
     name: "Delong Wu",
     icon: "",
-    homepage: "",
+    homepage: "https://ep1phany05.github.io/",
     address_flag: "1,†"
   },
   {
     name: "Di Kang",
     icon: "",
-    homepage: "",
+    homepage: "https://scholar.google.com/citations?user=2ztThPwAAAAJ&hl=zh-CN",
     address_flag: "2"
   },
   {
     name: "Linchao Bao",
     icon: "",
-    homepage: "",
+    homepage: "https://linchaobao.github.io/",
     address_flag: "2"
   },
   {
     name: "Xun Cao",
     icon: "",
-    homepage: "",
+    homepage: "https://cite.nju.edu.cn/People/Faculty/20190621/i5054.html",
     address_flag: "1,*"
   },
   {
     name: "Zhan Ma",
     icon: "",
-    homepage: "",
+    homepage: "https://vision.nju.edu.cn/fc/d3/c29470a457939/page.htm",
     address_flag: "1"
   },
 ]
