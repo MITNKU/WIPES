@@ -4,16 +4,16 @@ import { ElIcon } from 'element-plus'
 import { Document, Files, MagicStick, Picture, DataAnalysis, Film } from '@element-plus/icons-vue'
 
 // logo地址，没有则置为""即可
-const logo = './logo.png'
+const logo = ''
 
 // 标题
-const title = 'Academic Project Page Template'
+const title = 'WIPES: Wavelet-based Visual Primitives'
 
 // 标题颜色
 const title_color = '#000000'
 
 // 标题补充，没有则置为''即可
-const title_supp = ' (Vue based)'
+const title_supp = '*'
 
 // 标题补充颜色
 const title_supp_color = '#42B883'
@@ -24,22 +24,46 @@ const btn_color = '#444444'
 // 作者清单（包含作者姓名、头像、主页、地址序号）
 const authors = [
   {
-    name: "Your Name",
-    icon: "./icon/junyaohu.jpg",
-    homepage: "https://junyaohu.github.io/",
-    address_flag: "1,#"
+    name: "Wenhao Zhang",
+    icon: "",
+    homepage: "",
+    address_flag: "1,†"
   },
   {
-    name: "Anya Forger",
-    icon: "./icon/anya.jpg",
-    homepage: "https://www.bilibili.com/video/BV1jv4y1P7Bb",
-    address_flag: "2,#"
+    name: "Hao Zhu",
+    icon: "",
+    homepage: "",
+    address_flag: "1,†"
   },
   {
-    name: "BugCat Capoo",
-    icon: "./icon/capoo.webp",
-    homepage: "https://zh.moegirl.org.cn/%E7%8C%AB%E7%8C%AB%E8%99%AB%E5%92%96%E6%B3%A2",
+    name: "Delong Wu",
+    icon: "",
+    homepage: "",
+    address_flag: "1,†"
+  },
+  {
+    name: "Di Kang",
+    icon: "",
+    homepage: "",
+    address_flag: "2"
+  },
+  {
+    name: "Linchao Bao",
+    icon: "",
+    homepage: "",
+    address_flag: "2"
+  },
+  {
+    name: "Xun Cao",
+    icon: "",
+    homepage: "",
     address_flag: "1,*"
+  },
+  {
+    name: "Zhan Ma",
+    icon: "",
+    homepage: "",
+    address_flag: "1"
   },
 ]
 
@@ -47,31 +71,27 @@ const authors = [
 const addresses = [
   {
     address_flag: "1",
-    name: "Home University",
-    icon: "./icon/home.png",
-    homepage: "https://github.com/hmuniversity"
+    name: "Nanjing University",
+    icon: "",
+    homepage: ""
   },
   {
     address_flag: "2",
-    name: "IKUN University",
-    icon: "./icon/ikun.avif",
-    homepage: "https://www.bilibili.com/video/BV178411Y7QB"
+    name: "Tencent",
+    icon: "",
+    homepage: ""
   },
 ]
 
 // 共一和通讯提示
 const con_and_corresponding_author = 
-  "#: Equal Contribution. *: Corresponding Author."
+  "† Equal contribution. * Corresponding author: caoxun@nju.edu.cn"
 
 // 最新消息
-const news = "🔥 [2024-12-15] This template project is still under development."
+const news = ""
 
 // 强调内容
 const emphases = [
-  "🎉 [ABCD 2024] Poster",
-  "🥰 欢迎关注“减论”微信公众号/B站/知乎/小红书",
-  "传递人工智能算法科普教育的减约理解",
-  "提升信息效率及认知维度"
 ]
 
 // 提供引导资料链接
