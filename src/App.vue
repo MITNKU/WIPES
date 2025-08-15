@@ -151,4 +151,18 @@ th, td {
   overflow-y: hidden;
 }
 
+.media-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.media-container img,
+.media-container video {
+  max-width: 100%;
+  width: 800px; /* 需要一致宽度时调整这里 */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 </style>
