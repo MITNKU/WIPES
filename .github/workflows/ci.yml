@@ -1,28 +1,31 @@
-# 以下以一个构建vue项目的yml文件为例子
 name: CI
-
-# 给予工作流写权限，因为需要向gh-pages分支提交代码
 permissions:
   contents: write
 
 on:
-    push:
-        branches:
-            - main # 这里只配置了main分支，所以只有推送main分支才会触发以下任务
+  push:
+    branches: [ main ]
+
 jobs:
-    build-and-deploy:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v3
-            - name: Use Node.js
-              uses: actions/setup-node@v3
-              with:
-                  node-version: "18.x"
-            - run: node -v
-            - run: npm install
-            - run: npm run build
-            - name: Deploy # 部署
-              uses: JamesIves/github-pages-deploy-action@v4.3.3
-              with:
-                  branch: gh-pages # 部署后提交到那个分支
-                  folder: dist # 这里填打包好的目录名称
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.17.1'   # >=20.12.0 都可以；推荐 LTS 22
+          check-latest: true
+          cache: 'npm'
+
+      - run: node -v && which node
+      - run: node -p "process.versions"   # 再次确认版本，避免走到旧 Node
+      - run: npm ci
+      - run: npm run build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.6.8
+        with:
+          branch: gh-pages
+          folder: dist

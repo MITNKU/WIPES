@@ -31,5 +31,6 @@
     "@vitejs/plugin-vue": "^6.0.1",
     "twikoo": "^1.6.40",
     "vite": "^7.1.2"
-  }
+  },
+  "engines": { "node": ">=20.12" }
 }
