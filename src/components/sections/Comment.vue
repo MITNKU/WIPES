@@ -41,7 +41,7 @@ export default {
 </script>
 
 <template>
-  <div>
+  <!-- <div>
     <el-divider />
     
     <el-row justify="center">
@@ -53,7 +53,7 @@ export default {
         <div id="twikoo"></div>
       </el-col>
     </el-row>
-  </div>
+  </div> -->
 </template>
 
 <style>
