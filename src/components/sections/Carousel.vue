@@ -21,15 +21,15 @@ export default {
       // 更新为你的子图路径和图注
       images: [
         {
-          src: "/pdf/1.1_compare_with_gaussian_a_00.png",
+          src: "./carousel/1.1_compare_with_gaussian_a_00.png",
           caption: "(a) Comparison of Gaussians and WIPES"
         },
         {
-          src: "/pdf/1.1_compare_with_gaussian_b_00.png",
+          src: "./carousel/1.1_compare_with_gaussian_b_00.png",
           caption: "(b) PSNR improvement of WIPES over Gaussian primitives"
         },
         {
-          src: "/pdf/1.1_compare_with_gaussian_c_00.png",
+          src: "./carousel/1.1_compare_with_gaussian_c_00.png",
           caption: "(c) Performance comparison of WIPES and Gaussian primitives"
         },
       ],
