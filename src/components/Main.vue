@@ -42,7 +42,7 @@ export default {
 
 <template>
   <Title/>
-  <Carousel/>
+  <!-- <Carousel/> -->
   <Video v-if="false"/>
   <Abstract/>
   <Markdown/>
