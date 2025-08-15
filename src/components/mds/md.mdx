@@ -1,53 +1,30 @@
-# Markdown (H1)
+# Pipeline
 
-The render result of `md.mdx` is here.
+![Pipeline of WIPES](./pdf/2.1_pipeline_00.png)
 
-## Good (H2)
+Pipeline of WIPES. WIPES can be seamlessly integrated into various visual reconstruction tasks, including 2D image representation, 5D static and 6D dynamic novel view synthesis (NVS).
 
-### Nice (H3)
+# Wavelet-Based Frequency Flexibility
 
-[**Diffusion models**](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/) are a class of generative models in machine learning that have gained significant attention in recent years. 
+![Wavelet-Based Frequency Flexibility](./pdf/4.3_toy_exp_00.png)
 
-**Text-to-image diffusion models** have various application scenarios, including:
+Comparisons of Gaussian and wavelet primitives for representing complex texture patterns. Results indicate that wavelet primitives effectively overcome the low-frequency bias of Gaussian primitives and demonstrate excellent performance in high-frequency texture regions.
 
-- **Art & Design**: Used by artists for creative art and fashion designers to generate clothing renderings.
-- **Advertising & Marketing**: Helps in creating advertising posters and product promotion maps.
-- **Game & Film**: Applied in game scene and character design, as well as film and television concept design...
+# Experiments
 
-> Thegeneral training steps of diffusion models are as follows:
+**<div style="text-align: center;">2D Image Fitting</div>**
 
-1. Data collection
-2. Noise addition
-3. Model building
-4. Training
-5. Evaluation
-6. Deployment
+![2D Image Fitting](./pdf/4.1_2d_exp_00.png)
 
+**<div style="text-align: center;">5D Static Novel View Synthesis</div>**
 
-```
-import torch 
+![5D Static Novel View Synthesis](./pdf/4.2_5d_exp_00.png)
 
-def denoise():
-    pass
-```
+**<div style="text-align: center;">6D Dynamic Novel View Synthesis</div>**
 
-* [ ] to do
-* [x] done
-* [x] ~114514~
-
-![](./logo_vision_aigc.png)
-
-Lift ($$L$$) can be determined by Lift Coefficient ($$C_L$$) like the following
-equation.
-
-$$
-L = \frac{1}{2} \rho v^2 S C_L
-$$
-
-
-### Table (H3)
-
-| a       | b       | c     |  d      |
-| -       | :-      | -:    | :-:     |
-| Alpha   | Bravo   | Alpha | Bravo   |
-| 中文    | Charlie | 👩‍❤️‍👩    | Delta   |
+<div style="text-align: center;">
+  <video controls width="600">
+    <source src="./video/6d.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
