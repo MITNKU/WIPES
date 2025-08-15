@@ -10,16 +10,9 @@
     </el-row>
 
     <!-- 图片滑动展示部分 -->
-    <el-row justify="center" style="margin-top: 40px;">
+    <el-row justify="center" style="margin-top: 20px;">
       <el-col :xs="24" :sm="22" :md="20" :lg="20" :xl="18">
-        <el-carousel :interval="4000" arrow="always">
-          <el-carousel-item v-for="(img, index) in images" :key="index">
-            <div class="figure-container">
-              <img :src="img.src" :alt="img.alt" class="figure-image" />
-              <p class="subfigure-caption">{{ img.caption }}</p>
-            </div>
-          </el-carousel-item>
-        </el-carousel>
+        <Carousel />
       </el-col>
     </el-row>
   </div>
@@ -27,24 +20,7 @@
 
 <script setup>
 import abstract from '../mds/abstract.mdx';
-
-const images = [
-  {
-    src: '/pdf/1.1_compare_with_gaussian_a_00.png',
-    alt: 'Comparison of Gaussians and WIPES - Spatial and Frequency Domain',
-    caption: '(a) Comparison of Gaussians and WIPES'
-  },
-  {
-    src: '/pdf/1.1_compare_with_gaussian_b_00.png',
-    alt: 'PSNR improvement of WIPES over Gaussian primitives',
-    caption: '(b) PSNR improvement of WIPES over Gaussian primitives'
-  },
-  {
-    src: '/pdf/1.1_compare_with_gaussian_c_00.png',
-    alt: 'Performance comparison of WIPES and Gaussian primitives',
-    caption: '(c) Performance comparison of WIPES and Gaussian primitives'
-  }
-];
+import Carousel from './Carousel.vue';
 </script>
 
 <style scoped>
