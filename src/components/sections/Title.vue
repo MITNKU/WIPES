@@ -253,7 +253,7 @@ const buttons = [
 /* 共一和通讯文字属性 */
 .con-cor {
   font-family: Arial;
-  font-size: 14px;
+  font-size: 18px;
   margin: 18px 0px;
   text-align: center;
 }
