@@ -1,21 +1,9 @@
 <script>
+import { defineAsyncComponent } from 'vue'
 import Title from './sections/Title.vue'
 import Abstract from './sections/Abstract.vue'
 import Markdown from './sections/Markdown.vue'
 import BibTeX from './sections/BibTeX.vue'
-import Carousel from './sections/Carousel.vue'
-import Video from './sections/Video.vue'
-import ImageSlider from './sections/ImageSlider.vue'
-import ImageSliderInner from './sections/ImageSliderInner.vue'
-import ImageSelector from './sections/ImageSelector.vue'
-import Echart from './sections/Echart.vue'
-import Table from './sections/Table.vue'
-import Collapse from './sections/Collapse.vue'
-import SeletionForComparison from './sections/SeletionForComparison.vue'
-import Comment from './sections/Comment.vue'
-import Latex from './sections/Latex.vue'
-import Model3D from './sections/Model3D.vue'
-import GaussianSplats3D from './sections/GaussianSplats3D.vue'
 
 export default {
   components: {
@@ -23,19 +11,21 @@ export default {
     Abstract,
     Markdown,
     BibTeX,
-    Carousel,
-    Video,
-    ImageSlider,
-    ImageSliderInner,
-    ImageSelector,
-    Echart,
-    Collapse,
-    Table,
-    SeletionForComparison,
-    Comment,
-    Latex,
-    Model3D,
-    GaussianSplats3D
+    Comment: defineAsyncComponent(() => import('./sections/Comment.vue')),
+    // The following components are heavy and are loaded asynchronously
+    // to improve initial page load performance.
+    Carousel: defineAsyncComponent(() => import('./sections/Carousel.vue')),
+    Video: defineAsyncComponent(() => import('./sections/Video.vue')),
+    ImageSlider: defineAsyncComponent(() => import('./sections/ImageSlider.vue')),
+    ImageSliderInner: defineAsyncComponent(() => import('./sections/ImageSliderInner.vue')),
+    ImageSelector: defineAsyncComponent(() => import('./sections/ImageSelector.vue')),
+    Echart: defineAsyncComponent(() => import('./sections/Echart.vue')),
+    Table: defineAsyncComponent(() => import('./sections/Table.vue')),
+    Collapse: defineAsyncComponent(() => import('./sections/Collapse.vue')),
+    SeletionForComparison: defineAsyncComponent(() => import('./sections/SeletionForComparison.vue')),
+    Latex: defineAsyncComponent(() => import('./sections/Latex.vue')),
+    Model3D: defineAsyncComponent(() => import('./sections/Model3D.vue')),
+    GaussianSplats3D: defineAsyncComponent(() => import('./sections/GaussianSplats3D.vue')),
   }
 }
 </script>
