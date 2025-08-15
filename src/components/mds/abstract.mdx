@@ -1,3 +1,89 @@
 # Abstract
 
 Pursuing a continuous visual representation that offers flexible frequency modulation and fast rendering speed has recently garnered increasing attention in the fields of 3D vision and graphics. However, existing representations often rely on frequency guidance or complex neural network decoding, leading to spectrum loss or slow rendering. To address these limitations, we propose **WIPES**, a universal **W**avelet-based v**I**sual **P**rimitiv**ES** for representing multi-dimensional visual signals. Building on the spatial-frequency localization advantages of wavelets, WIPES effectively captures both the low-frequency "forest" and the high-frequency "trees." Additionally, we develop a wavelet-based differentiable rasterizer to achieve fast visual rendering. Experimental results on various visual tasks, including 2D image representation, 5D static and 6D dynamic novel view synthesis, demonstrate that WIPES, as a visual primitive, offers higher rendering quality and faster inference than INR-based methods, and outperforms Gaussian-based representations in rendering quality.
+
+<div style="margin-top: 40px;">
+  <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+    
+    {/* 左半部分：三个子图组成的大图 */}
+    <div style="flex: 1; min-width: 300px; max-width: 500px;">
+      <h3 style="text-align: center; font-size: 16px; font-weight: bold; margin-bottom: 20px; color: #333;">
+        Figure 1: Comparison of Gaussians and WIPES
+      </h3>
+      
+      {/* 子图 (a) */}
+      <div style="text-align: center; margin-bottom: 15px;">
+        <img 
+          src="/pdf/1.1_compare_with_gaussian_a_00.png" 
+          alt="Comparison of Gaussians and WIPES - Spatial and Frequency Domain"
+          style="max-width: 100%; height: auto; border: 1px solid #e0e0e0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;"
+          onMouseOver="this.style.transform='scale(1.02)'; this.style.boxShadow='0 4px 16px rgba(0, 0, 0, 0.15)';"
+          onMouseOut="this.style.transform='scale(1)'; this.style.boxShadow='0 2px 8px rgba(0, 0, 0, 0.1)';"
+        />
+        <p style="font-size: 14px; color: #666; margin-top: 8px; font-style: italic; line-height: 1.4;">
+          (a) Comparison of Gaussians and WIPES
+        </p>
+      </div>
+
+      {/* 子图 (b) */}
+      <div style="text-align: center; margin-bottom: 15px;">
+        <img 
+          src="/pdf/1.1_compare_with_gaussian_b_00.png" 
+          alt="PSNR improvement of WIPES over Gaussian primitives"
+          style="max-width: 100%; height: auto; border: 1px solid #e0e0e0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;"
+          onMouseOver="this.style.transform='scale(1.02)'; this.style.boxShadow='0 4px 16px rgba(0, 0, 0, 0.15)';"
+          onMouseOut="this.style.transform='scale(1)'; this.style.boxShadow='0 2px 8px rgba(0, 0, 0, 0.1)';"
+        />
+        <p style="font-size: 14px; color: #666; margin-top: 8px; font-style: italic; line-height: 1.4;">
+          (b) PSNR improvement of WIPES over Gaussian primitives [44]
+        </p>
+      </div>
+
+      {/* 子图 (c) */}
+      <div style="text-align: center; margin-bottom: 15px;">
+        <img 
+          src="/pdf/1.1_compare_with_gaussian_c_00.png" 
+          alt="Performance comparison of WIPES and Gaussian primitives"
+          style="max-width: 100%; height: auto; border: 1px solid #e0e0e0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;"
+          onMouseOver="this.style.transform='scale(1.02)'; this.style.boxShadow='0 4px 16px rgba(0, 0, 0, 0.15)';"
+          onMouseOut="this.style.transform='scale(1)'; this.style.boxShadow='0 2px 8px rgba(0, 0, 0, 0.1)';"
+        />
+        <p style="font-size: 14px; color: #666; margin-top: 8px; font-style: italic; line-height: 1.4;">
+          (c) Performance comparison of WIPES and Gaussian primitives [44]
+        </p>
+      </div>
+    </div>
+
+    {/* 右半部分：单独的图片 */}
+    <div style="flex: 1; min-width: 300px; max-width: 500px;">
+      <h3 style="text-align: center; font-size: 16px; font-weight: bold; margin-bottom: 20px; color: #333;">
+        Figure 2: Toy Experiment Results
+      </h3>
+      <div style="text-align: center;">
+        <img 
+          src="/pdf/4.3_toy_exp_00.png" 
+          alt="Toy Experiment Results"
+          style="max-width: 100%; height: auto; border: 1px solid #e0e0e0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;"
+          onMouseOver="this.style.transform='scale(1.02)'; this.style.boxShadow='0 4px 16px rgba(0, 0, 0, 0.15)';"
+          onMouseOut="this.style.transform='scale(1)'; this.style.boxShadow='0 2px 8px rgba(0, 0, 0, 0.1)';"
+        />
+        <p style="font-size: 14px; color: #666; margin-top: 8px; font-style: italic; line-height: 1.4;">
+          Experimental results demonstrating WIPES performance
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+{/* 响应式样式 */}
+<style>
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 14px !important;
+    }
+    p {
+      font-size: 12px !important;
+    }
+  }
+</style>
