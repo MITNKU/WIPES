@@ -1,16 +1,20 @@
 # Pipeline
 
-<img src="./pdf/2.1_pipeline_00.png" alt="Pipeline of WIPES" loading="lazy" />
+<div class="media-container">
+  <img src="./pdf/2.1_pipeline_00.png" alt="Pipeline of WIPES" loading="lazy" />
+</div>
 
 Pipeline of WIPES. WIPES can be seamlessly integrated into various visual reconstruction tasks, including 2D image representation, 5D static and 6D dynamic novel view synthesis (NVS).
 
 # Wavelet-Based Frequency Flexibility
 
-<img
-  src="./pdf/4.3_toy_exp_00.png"
-  alt="Wavelet-Based Frequency Flexibility"
-  loading="lazy"
-/>
+<div class="media-container">
+  <img
+    src="./pdf/4.3_toy_exp_00.png"
+    alt="Wavelet-Based Frequency Flexibility"
+    loading="lazy"
+  />
+</div>
 
 Comparisons of Gaussian and wavelet primitives for representing complex texture patterns. Results indicate that wavelet primitives effectively overcome the low-frequency bias of Gaussian primitives and demonstrate excellent performance in high-frequency texture regions.
 
@@ -18,22 +22,25 @@ Comparisons of Gaussian and wavelet primitives for representing complex texture 
 
 **<div style="text-align: center;">2D Image Fitting</div>**
 
-<img src="./pdf/4.1_2d_exp_00.png" alt="2D Image Fitting" loading="lazy" />
+<div class="media-container">
+  <img src="./pdf/4.1_2d_exp_00.png" alt="2D Image Fitting" loading="lazy" />
+</div>
 
 **<div style="text-align: center;">5D Static Novel View Synthesis</div>**
 
-<img
-  src="./pdf/4.2_5d_exp_00.png"
-  alt="5D Static Novel View Synthesis"
-  loading="lazy"
-/>
+<div class="media-container">
+  <img
+    src="./pdf/4.2_5d_exp_00.png"
+    alt="5D Static Novel View Synthesis"
+    loading="lazy"
+  />
+</div>
 
 **<div style="text-align: center;">6D Dynamic Novel View Synthesis</div>**
 
-<div style="text-align: center;">
+<div class="media-container">
   <video
     controls
-    width="600"
     preload="metadata"
     poster="./pdf/video_poster_placeholder.png"
   >
@@ -41,3 +48,19 @@ Comparisons of Gaussian and wavelet primitives for representing complex texture 
     Your browser does not support the video tag.
   </video>
 </div>
+
+<style>
+  .media-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  .media-container img,
+  .media-container video {
+    max-width: 100%;
+    width: 800px; /* You can adjust this value */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+</style>
