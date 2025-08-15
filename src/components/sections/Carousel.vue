@@ -18,7 +18,6 @@ export default {
         Pagination,
         Autoplay,
       ],
-      // 更新为你的子图路径和图注
       images: [
         {
           src: "./carousel/1.1_compare_with_gaussian_a_00.png",
@@ -41,33 +40,14 @@ export default {
 <template>
   <el-row justify="center">
     <el-col :span="24">
-      <!-- 设置轮播图：循环播放、首张图序号、响应式、导航和分页、自动播放 -->
       <swiper
         :loop="true"
         :slidesPerView="1"
-        :breakpoints="{
-          600: {
-            slidesPerView: 2,
-          },
-          800: {
-            slidesPerView: 3,
-          },
-        }"
         :modules="modules"
-        :navigation="{ 
-          hideOnClick:true,
-        }"
-        :pagination="{ 
-          hideOnClick:true,
-          clickable:true, 
-          type:'bullets' 
-        }"
-        :autoplay="{ 
-          delay:5000,
-          disableOnInteraction:false,
-          pauseOnMouseEnter:true,
-        }"
-        >
+        :navigation="{ hideOnClick:true }"
+        :pagination="{ hideOnClick:true, clickable:true, type:'bullets' }"
+        :autoplay="{ delay:5000, disableOnInteraction:false, pauseOnMouseEnter:true }"
+      >
         <swiper-slide v-for="(image, index) in images" :key="index">
           <div class="figure-container">
             <el-image :src="image.src" class="figure-image"/>
@@ -80,7 +60,6 @@ export default {
 </template>
 
 <style>
-/* 设置Swiper风格 */
 .swiper {
   --swiper-theme-color: white;
 }
@@ -90,8 +69,9 @@ export default {
 }
 
 .figure-image {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  max-height: 400px; /* 统一图片高度 */
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
