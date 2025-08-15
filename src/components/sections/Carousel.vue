@@ -1,16 +1,16 @@
 <script>
-import { Swiper, SwiperSlide} from 'swiper/vue';
-import { Navigation, Pagination, Autoplay} from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css/bundle';
 
 export default {
   components: {
-      Swiper,
-      SwiperSlide,
-      Navigation,
-      Pagination,
-      Autoplay,
-    },
+    Swiper,
+    SwiperSlide,
+    Navigation,
+    Pagination,
+    Autoplay,
+  },
   data() {
     return {
       modules: [
@@ -18,14 +18,20 @@ export default {
         Pagination,
         Autoplay,
       ],
-      // 选择要轮播的照片
-      image_paths: [
-        "./carousel/1.jpg",
-        "./carousel/2.jpg",
-        "./carousel/3.jpg",
-        "./carousel/4.jpg",
-        "./carousel/5.jpg",
-        "./carousel/6.jpg",
+      // 更新为你的子图路径和图注
+      images: [
+        {
+          src: "/pdf/1.1_compare_with_gaussian_a_00.png",
+          caption: "(a) Comparison of Gaussians and WIPES"
+        },
+        {
+          src: "/pdf/1.1_compare_with_gaussian_b_00.png",
+          caption: "(b) PSNR improvement of WIPES over Gaussian primitives"
+        },
+        {
+          src: "/pdf/1.1_compare_with_gaussian_c_00.png",
+          caption: "(c) Performance comparison of WIPES and Gaussian primitives"
+        },
       ],
     }
   }
@@ -62,20 +68,41 @@ export default {
           pauseOnMouseEnter:true,
         }"
         >
-        <swiper-slide v-for="path in image_paths">
-          <el-image :src="path"/>
+        <swiper-slide v-for="(image, index) in images" :key="index">
+          <div class="figure-container">
+            <el-image :src="image.src" class="figure-image"/>
+            <p class="subfigure-caption">{{ image.caption }}</p>
+          </div>
         </swiper-slide>
       </swiper>
     </el-col>
   </el-row>
 </template>
-  
-<style>
 
+<style>
 /* 设置Swiper风格 */
 .swiper {
   --swiper-theme-color: white;
 }
 
+.figure-container {
+  text-align: center;
+}
+
+.figure-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.subfigure-caption {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+  font-style: italic;
+  line-height: 1.4;
+}
 </style>
-  
