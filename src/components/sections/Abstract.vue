@@ -33,11 +33,11 @@ const images = [
   },
   {
     src: "./carousel/1.1_compare_with_gaussian_b_00.png",
-    caption: "(b) PSNR improvement of WIPES over Gaussian primitives"
+    caption: "(b) PSNR improvement of WIPES over Gaussian"
   },
   {
     src: "./carousel/1.1_compare_with_gaussian_c_00.png",
-    caption: "(c) Performance comparison of WIPES and Gaussian primitives"
+    caption: "(c) Performance comparison of WIPES and Gaussian"
   },
 ];
 </script>
