@@ -3,11 +3,14 @@ export default {
   data() {
     return {
       bibtex: [
-        "@article{junyaohu2023template,",
-        "    title={Academic Project Page Template Vue},",
-        "    author={Hu, Junyao},",
-        "    journal={GitHub},",
-        "    year={2023}",
+        "@misc{zhang2025wipeswaveletbasedvisualprimitives,",
+        "    title={WIPES: Wavelet-based Visual Primitives},", 
+        "    author={Wenhao Zhang and Hao Zhu and Delong Wu and Di Kang and Linchao Bao and Xun Cao and Zhan Ma},",
+        "    year={2025},",
+        "    eprint={2508.12615},",
+        "    archivePrefix={arXiv},",
+        "    primaryClass={cs.CV},",
+        "    url={https://arxiv.org/abs/2508.12615},", 
         "}",
       ],
     }
