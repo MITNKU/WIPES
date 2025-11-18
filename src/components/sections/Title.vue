@@ -2,6 +2,9 @@
 import { ElIcon } from "element-plus";
 import { Document, Picture, DataAnalysis } from "@element-plus/icons-vue";
 
+const githubIcon = new URL("icon/github.svg", import.meta.env.BASE_URL).href;
+const arxivIcon = new URL("icon/arxiv.svg", import.meta.env.BASE_URL).href;
+
 // logo地址，没有则置为""即可
 const logo = "";
 
@@ -103,13 +106,13 @@ const buttons = [
     disabled: false,
     name: "Code",
     link: "https://github.com/MITNKU/wavelet-splatting",
-    icon: "/icon/github.svg",
+    icon: githubIcon,
   },
   {
     disabled: false,
     name: "arXiv",
     link: "https://arxiv.org/abs/2508.12615",
-    icon: "/icon/arxiv.svg",
+    icon: arxivIcon,
   },
   {
     disabled: false,
