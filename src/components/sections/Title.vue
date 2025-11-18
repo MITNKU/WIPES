@@ -1,9 +1,8 @@
 <script lang="ts" setup>
 import { ElIcon } from "element-plus";
 import { Document, Picture, DataAnalysis } from "@element-plus/icons-vue";
-
-const githubIcon = new URL("icon/github.svg", import.meta.env.BASE_URL).href;
-const arxivIcon = new URL("icon/arxiv.svg", import.meta.env.BASE_URL).href;
+import githubIcon from "@/assets/icon/github.svg";
+import arxivIcon from "@/assets/icon/arxiv.svg";
 
 // logo地址，没有则置为""即可
 const logo = "";
