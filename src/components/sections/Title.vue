@@ -98,7 +98,7 @@ const buttons = [
   {
     disabled: false,
     name: "Paper",
-    link: "https://openaccess.thecvf.com/content/ICCV2025/papers/Zhang_WIPES_Wavelet-based_Visual_Primitives_ICCV_2025_paper.pdf",
+    link: "https://openaccess.thecvf.com/content/ICCV2025/html/Zhang_WIPES_Wavelet-based_Visual_Primitives_ICCV_2025_paper.html",
     component: Document,
   },
   {
